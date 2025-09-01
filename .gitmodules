@@ -1,0 +1,6 @@
+[submodule "front"]
+	path = front
+	url = git@github.com:Vortek-API/FrontRepo.git
+[submodule "back"]
+	path = back
+	url = git@github.com:Vortek-API/BackRepo.git
