@@ -4,3 +4,6 @@
 [submodule "back"]
 	path = back
 	url = git@github.com:Vortek-API/BackRepo.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:Vortek-API/DocsRepo.git
