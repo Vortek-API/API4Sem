@@ -95,7 +95,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | US03 | Sprint 1 | Como cliente, quero visualizar o nível geral de tráfego da cidade e por regiões. | Dashboard mostra claramente os níveis gerais e por região; atualização automática sempre que houver alteração de indicadores. | Alta | 8 | Criação de níveis de monitoramento |
 | US04 | Sprint 1 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região. | Mapa colorido de acordo com os níveis de tráfego; todas as regiões cadastradas estão representadas; atualização automática a cada alteração de indicador. | Média | 5 | Dashboard com georreferenciamento |
 | US05 | Sprint 1 | Como sistema, quero registrar logs de criação e atualização dos indicadores. | Logs armazenados corretamente com usuário, data e ação realizada; todos os indicadores cadastrados ou alterados devem gerar log. | Média | 3 | Registro de dados para auditoria |
-|
+
 
 </details>
 
