@@ -1,14 +1,14 @@
 [submodule "front"]
 	path = front
-	url = git@github.com:Vortek-API/FrontRepo.git
+	url = https://github.com/Vortek-API/FrontRepo
 	branch = main
 
 [submodule "back"]
 	path = back
-	url = git@github.com:Vortek-API/BackRepo.git
+	url = https://github.com/Vortek-API/BackRepo
 	branch = main
 
 [submodule "docs"]
 	path = docs
-	url = git@github.com:Vortek-API/DocsRepo.git
+	url = https://github.com/Vortek-API/DocsRepo
 	branch = main
