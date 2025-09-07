@@ -54,25 +54,24 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 <details>
 <summary>Backlog</summary>
 
-| Ranking   | Sprint | User Story | Critérios de Aceitação | Prioridade | Estimativa (pts) | Requisito do Cliente |
-|------|--------|------------|----------------------|------------|-----------------|--------------------|
-| 1 | Sprint 1 | Como cliente, quero cadastrar indicadores de tráfego para monitoramento automático. | Indicadores cadastrados corretamente com todos os campos obrigatórios preenchidos. | Alta | 5 | Criação de indicadores de acompanhamento de tráfego na cidade |
-| 2 | Sprint 1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise. | Dados tratados e disponíveis para visualização no dashboard. | Alta | 8 | Tratamento dos dados |
-| 3 | Sprint 1 | Como cliente, quero calcular o nível geral de tráfego da cidade e por regiões. | Dashboard mostra claramente os níveis gerais e por região. | Alta | 8 | Criação de níveis de monitoramento |
-| 4 | Sprint 1 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região. | Mapa colorido de acordo com os níveis, atualizado com os dados disponíveis. | Média | 5 | Dashboard com georreferenciamento |
-| 5 | Sprint 1 | Como sistema, quero registrar historico de criação e atualização dos indicadores. | Logs armazenados com usuário, data e ação realizada. | Média | 3 | Registro de dados para auditoria |
-| 6 | Sprint 2 | Como cliente, quero carregar a frota de onibus/apresentar nos indicadores expecificos para onibus. | carregar de rotas e horários realizada; dados disponíveis para análise. | Alta | 5 | Criação de indicadores de tráfego |
-| 7 | Sprint 2 | Como sistema, quero classificar o tráfego em níveis automáticos com base nos dados. | Sistema classifica corretamente o tráfego em Intenso, Moderado, Ok ou Suspeito. | Alta | 8 | Criação de níveis de monitoramento |
-| 8 | Sprint 2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros. | Dashboard mostra gráficos claros e fáceis de interpretar. | Alta | 5 | Dashboard simples e lúdico |
-| 9 | Sprint 2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus  no mapa. | Campo de b ca retorna a localização correta e exibe dados relacionados. | Média | 5 | Dashboard com georreferenciamento |
-| 10 | Sprint 2 | Como sistema, quero enviar alertas automáticos quando os indicadores ultrapassarem limites. | Alertas disparados automaticamente; mensagem vinculada ao protocolo de ação. | Alta | 10 | Sistema de alertas acionando protocolos |
-| 11 | Sprint 3 | Como cliente, quero visualizar os alertas recebidos e stat  dos chamados. | Tela exibe lista de alertas com stat  aberto, respondido ou encerrado. | Alta | 5 | Sistema de alertas |
-| 12 | Sprint 3 | Como cliente, quero responder aos alertas e que o sistema registre a resposta. | Resposta registrada corretamente; stat  do alerta atualizado; log gerado. | Alta | 10 | Sistema de alertas acionando protocolos |
-| 13 | Sprint 3 | Como sistema, quero armazenar logs de envio, resposta e encerramento dos alertas. | Logs persistidos corretamente com todas as informações necessárias. | Alta | 5 | Registro de dados para auditoria |
-| 14 | Sprint 3 | Como cliente, quero visualizar histórico de alertas e ações tomadas. | Dashboard mostra histórico completo com filtros por período. | Média | 8 | Sistema de alertas e monitoramento histórico |
-| 15 | Sprint 3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares. | Mapa atualizado em tempo real com informações visuais de tráfego. | Alta | 8 | Dashboard com georreferenciamento |
-| 16 | Sprint 3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego. | Sugestões apresentadas de forma clara, permitindo avaliar possíveis integrações futuras. | Média | 5 | Sugestões de dados externos |
-
+| Ranking | Sprint  | User Story | Prioridade | Estimativa (pts) |
+|---------|---------|------------|------------|-----------------|
+| 1       |  1 | Como cliente, quero cadastrar indicadores de tráfego para monitoramento automático para poder acompanhar o desempenho da cidade. | Alta | 8 |
+| 2       |  1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise para fornecer informações confiáveis aos usuários. | Alta | 6 |
+| 3       |  1 | Como cliente, quero calcular o nível geral de tráfego da cidade e por regiões para identificar áreas críticas. | Alta | 8 |
+| 4       |  1 | Como cliente, quero autenticar-me no sistema para acessar minhas informações de forma segura para proteger meus dados pessoais. | Alta | 5 |
+| 5       |  1 | Como sistema, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
+| 6       |  1 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Média | 8 |
+| 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
+| 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
+| 9       |  2 | Como sistema, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
+| 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
+| 12      |  3 | Como sistema, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
+| 13      |  3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
+| 14      |  3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
+| 15      |  3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
+| 16      |  3 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região para identificar rapidamente áreas congestionadas. | Baixa | 5 |
 
 </details>
 
@@ -82,14 +81,20 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 <summary>Sprint 1</summary>
 
 # Backlog da Sprint 1
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
 
-| Ranking   | Sprint   | User Story | Critérios de Aceitação | Prioridade | Estimativa (pts) | Requisito do Cliente |
-|------|----------|------------|----------------------|------------|-----------------|--------------------|
-| 1 | Sprint 1 | Como cliente, quero cadastrar indicadores de tráfego para monitoramento automático. | Indicadores cadastrados corretamente com todos os campos obrigatórios preenchidos; possibilidade de cadastrar múltiplos indicadores. | Alta | 5 | Criação de indicadores de acompanhamento de tráfego na cidade |
-| 2 | Sprint 1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise. | Dados tratados e disponíveis para visualização no dashboard; atualização automática sempre que novos indicadores forem cadastrados ou alterados. | Alta | 8 | Tratamento dos dados |
-| 3 | Sprint 1 | Como cliente, quero visualizar o nível geral de tráfego da cidade e por regiões. | Dashboard mostra claramente os níveis gerais e por região; atualização automática sempre que houver alteração de indicadores. | Alta | 8 | Criação de níveis de monitoramento |
-| 4 | Sprint 1 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região. | Mapa colorido de acordo com os níveis de tráfego; todas as regiões cadastradas estão representadas; atualização automática a cada alteração de indicador. | Média | 5 | Dashboard com georreferenciamento |
-| 5 | Sprint 1 | Como sistema, quero registrar logs de criação e atualização dos indicadores. | Logs armazenados corretamente com usuário, data e ação realizada; todos os indicadores cadastrados ou alterados devem gerar log. | Média | 3 | Registro de dados para auditoria |
+| Ranking | Sprint  | User Story | Prioridade | Estimativa (pts) |
+|---------|---------|------------|------------|-----------------|
+| 1       |  1 | Como cliente, quero cadastrar indicadores de tráfego para monitoramento automático para poder acompanhar o desempenho da cidade. | Alta | 8 |
+| 2       |  1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise para fornecer informações confiáveis aos usuários. | Alta | 6 |
+| 3       |  1 | Como cliente, quero calcular o nível geral de tráfego da cidade e por regiões para identificar áreas críticas. | Alta | 8 |
+| 4       |  1 | Como cliente, quero autenticar-me no sistema para acessar minhas informações de forma segura para proteger meus dados pessoais. | Alta | 5 |
+| 5       |  1 | Como sistema, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
+| 6       |  1 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Média | 8 |
+
+</div>
+</div>
 
 <br>
 <br>
@@ -97,12 +102,32 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 <div align="center">
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
 
+### Sprint 1 – Organização
   
-| Critério| Sprint 
-|------|-------------
-| Capacidade estimada da Equipe por Sprint: |--------| 
-| Meta da Sprint: |--------|
-|Previsão da Sprint (extras, sem compromisso de entrega)| --------| 
+| Critério | Sprint |
+|----------|--------|
+| Capacidade estimada da Equipe por Sprint: | 38 story points |
+| Meta da Sprint: | US de ranking 1, 2, 3, 4 (27 story points) |
+| Previsão da Sprint (extras, sem compromisso de entrega) | US de ranking 1, 5, 6 (11 story points) |
+
+
+</div>
+</div>
+
+### Sprint 1 – DoR e DoD
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+| Ranking | DoR | DoD |
+|---------|-----|-----|
+| 1 | Requisitos de acompanhamento de tráfego definidos pelo cliente | Indicadores cadastrados corretamente com todos os campos obrigatórios preenchidos e visíveis no sistema |
+| 2 | Dados de tráfego disponíveis para tratamento e análise | Dados tratados, validados e prontos para visualização no dashboard |
+| 3 | Critérios para cálculo de níveis gerais e por região definidos | Dashboard mostra claramente os níveis gerais e por região, com informações confiáveis |
+| 4 | Cliente com credenciais válidas | Autenticação realizada com sucesso e acesso seguro às informações pessoais |
+| 5 | Histórico de indicadores definido | Logs armazenados corretamente com usuário, data e ação realizada |
+| 6 | Indicadores e posições de radares disponíveis | Mapa atualizado em tempo real com pings representando radares e indicadores visíveis |
+
 </div>
 </div>
 
