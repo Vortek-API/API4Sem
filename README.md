@@ -136,6 +136,61 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 
 ---
 
+<details>
+<summary>Sprint 2</summary>
+
+# Backlog da Sprint 2
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+| Ranking | Sprint | User Story | Prioridade | Estimativa (pts) |
+|---------|--------|------------|------------|-----------------|
+| 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
+| 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
+| 9       |  2 | Como sistema, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
+| 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
+
+</div>
+</div>
+
+<br>
+<br>
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+### Sprint 2 – Organização
+  
+| Critério | Sprint |
+|----------|--------|
+| Capacidade estimada da Equipe por Sprint: | 27 story points |
+| Meta da Sprint: | US de ranking 7, 9, 10 (16 story points) |
+| Previsão da Sprint (extras, sem compromisso de entrega) | US de ranking 8, 11 (11 story points) |
+
+</div>
+</div>
+
+### Sprint 2 – DoR e DoD
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+| Ranking | DoR | DoD |
+|---------|-----|-----|
+| 7 | Estrutura de dados da frota disponível; acesso ao banco de horários | Rotas e horários carregados corretamente no sistema, visíveis e pesquisáveis |
+| 8 | Dados da frota carregados e validados | Indicadores no dashboard refletem corretamente os dados da frota, integrados aos demais indicadores de tráfego |
+| 9 | Regras de classificação de tráfego definidas | Tráfego classificado automaticamente em níveis, com atualizações visíveis no dashboard em tempo real |
+| 10 | Dados de velocidade de ônibus e carros disponíveis | Gráficos de velocidade de tráfego gerados corretamente, permitindo comparação e análise da fluidez |
+| 11 | Base de endereços e pontos de ônibus disponível no mapa | Funcionalidade de busca implementada; pesquisa retorna resultados corretos e destacados no mapa |
+
+</div>
+</div>
+
+</details>
+
+---
+
 # Requisitos de Permanência do Grupo
 
 1. **Comprometimento com as Reuniões**  
