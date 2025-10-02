@@ -60,14 +60,14 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | 2       |  1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise para fornecer informações confiáveis aos usuários. | Alta | 6 |
 | 3       |  1 | Como cliente, quero calcular o nível geral de tráfego da cidade e por regiões para identificar áreas críticas. | Alta | 8 |
 | 4       |  1 | Como cliente, quero autenticar-me no sistema para acessar minhas informações de forma segura para proteger meus dados pessoais. | Alta | 5 |
-| 5       |  1 | Como sistema, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
+| 5       |  1 | Como cliente, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
 | 6       |  1 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Média | 8 |
 | 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
 | 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
-| 9       |  2 | Como sistema, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 9       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
 | 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
 | 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
-| 12      |  3 | Como sistema, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
+| 12      |  3 | Como cliente, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
 | 13      |  3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
 | 14      |  3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
 | 15      |  3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
@@ -87,7 +87,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | Ranking | Sprint  | User Story | Prioridade | Estimativa (pts) |
 |---------|---------|------------|------------|-----------------|
 | 1       |  1 | Como cliente, quero cadastrar indicadores de tráfego para monitoramento automático para poder acompanhar o desempenho da cidade. | Alta | 8 |
-| 2       |  1 | Como sistema, quero processar e tratar os dados de tráfego para que fiquem prontos para análise para fornecer informações confiáveis aos usuários. | Alta | 6 |
+| 2       |  1 | Como cliente, quero processar e tratar os dados de tráfego para que fiquem prontos para análise para fornecer informações confiáveis aos usuários. | Alta | 6 |
 | 3       |  1 | Como cliente, quero calcular o nível geral de tráfego da cidade e por regiões para identificar áreas críticas. | Alta | 8 |
 | 4       |  1 | Como cliente, quero autenticar-me no sistema para acessar minhas informações de forma segura para proteger meus dados pessoais. | Alta | 5 |
 | 5       |  1 | Como sistema, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
@@ -147,7 +147,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 |---------|--------|------------|------------|-----------------|
 | 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
 | 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
-| 9       |  2 | Como sistema, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 9       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
 | 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
 | 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
 
@@ -160,7 +160,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 <div align="center">
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
 
-### Sprint 2 – Organização
+## Sprint 2 – Organização
   
 | Critério | Sprint |
 |----------|--------|
@@ -171,10 +171,14 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 </div>
 </div>
 
-### Sprint 2 – DoR e DoD
+<br>
+<br>
+
+### Sprint 2 – DoR e DoD (por US)
 
 <div align="center">
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
 
 | Ranking | DoR | DoD |
 |---------|-----|-----|
