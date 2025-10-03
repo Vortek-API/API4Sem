@@ -64,14 +64,14 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | 5       |  1 | Como cliente, quero registrar histórico de criação e atualização dos indicadores para manter rastreabilidade das alterações. | Média | 3 |
 | 6       |  1 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Média | 8 |
 | 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
-| 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
-| 9       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 8       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 9       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
 | 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
 | 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
 | 12      |  3 | Como cliente, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
-| 13      |  3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
-| 14      |  3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
-| 15      |  3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
+| 13      |  3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
+| 14      |  3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
+| 15      |  3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
 | 16      |  3 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região para identificar rapidamente áreas congestionadas. | Baixa | 5 |
 
 </details>
@@ -147,8 +147,8 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | Ranking | Sprint | User Story | Prioridade | Estimativa (pts) |
 |---------|--------|------------|------------|-----------------|
 | 7       |  2 | Como cliente, quero carregar as rotas e horários da frota de ônibus para que estejam disponíveis no sistema para consulta e planejamento. | Alta | 3 |
-| 8       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
-| 9       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 8       |  2 | Como cliente, quero classificar o tráfego em níveis automáticos com base nos dados para fornecer informações imediatas e confiáveis aos usuários. | Alta | 8 |
+| 9       |  2 | Como cliente, quero que os dados carregados da frota de ônibus estejam integrados aos indicadores específicos no dashboard para ter uma visão completa do tráfego. | Média | 6 |
 | 10      |  2 | Como cliente, quero visualizar gráficos de velocidade de tráfego de ônibus e carros para entender a fluidez do trânsito. | Média | 5 |
 | 11      |  2 | Como cliente, quero pesquisar por endereço ou ponto de ônibus no mapa para encontrar rapidamente minha rota. | Baixa | 5 |
 
