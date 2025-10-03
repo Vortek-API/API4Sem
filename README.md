@@ -46,7 +46,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 # TECNOLOGIAS UTILIZADAS
 
 <p align="center">
-<img src="https://go-skill-icons.vercel.app/api/icons?i=java,vue,nuxt,oracle,git,github,figma,vscode,spring" width="600" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=java,vue,nuxt,oracle,git,github,figma,vscode,spring,docker,redis" width="600" />
 </p>
 
 ---
