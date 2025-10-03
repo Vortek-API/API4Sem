@@ -3,6 +3,7 @@
 O sistema proposto visa a manipulação e análise de dados de radares de trânsito de São José dos Campos, permitindo a visualização de informações em tempo real por meio de dashboards interativos. Será construído sobre um banco de dados relacional, com API RESTful em Spring Boot e atualizações via WebSocket, garantindo acesso seguro e eficiente. A interface em Vue.js será responsiva e intuitiva, integrando gráficos e mapas georreferenciados, permitindo monitoramento de indicadores, disparo de alertas automáticos facilitando a tomada de decisão na gestão do tráfego urbano.
 
 ---
+
 <div align="center">
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
@@ -192,6 +193,15 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 </div>
 
 </details>
+
+---
+
+# **TIME VORTEK**
+<div align="center">
+
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+<img width="1219" height="689" alt="image" src="https://github.com/user-attachments/assets/f0f57506-cad6-41f7-b09f-56e35142531d" />
+
 
 ---
 
