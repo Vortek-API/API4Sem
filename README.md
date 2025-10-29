@@ -182,7 +182,6 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 
 #  DoR e DoD — Sprint 2
 
----
 
 | **Ranking** | **DoR (Definition of Ready)** | **DoD (Definition of Done)** |
 |:--:|:--|:--|
@@ -191,6 +190,68 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 | **9**<br>_Integrar dados da frota aos indicadores do dashboard_ | - Indicadores que usarão dados da frota definidos (ex: velocidade média, total de ônibus ativos).<br>- Mapeamento de origem dos dados e frequência de atualização definidos.<br>- Mockup do dashboard atualizado com cards reservados.<br>- Dados da frota testados e validados. | - Indicadores aparecem no dashboard integrados aos demais.<br>- Backend calcula e envia dados corretamente.<br>- Valores dos indicadores conferem com dados reais.<br>- Front adaptado e responsivo.<br>- Testes unitários e de integração realizados.<br>- Logs registrando erros e tempos de atualização.<br>- Documentação técnica revisada.<br>- PO validou o dashboard e aprovou a integração. |
 | **10**<br>_Visualizar gráficos de velocidade (ônibus e carros)_ | - Dados de velocidade disponíveis (histórico e em tempo real).<br>- Tipo de gráfico (linha/área) e filtros definidos (tipo de veículo, horário, região).<br>- Mockup da tela validado com PO.<br>- Endpoint para puxar dados de velocidade documentado.<br>- Critério de aceitação: atualização automática e carregamento < 3s. | - Tela de dashboard criada e seguindo padrões do sistema.<br>- Backend implementa cálculos e agrega velocidades corretamente.<br>- Gráficos mostram ônibus e carros com legendas e tooltips.<br>- Atualização automática funcionando (ex: a cada 1 min).<br>- Testes unitários e manuais validados.<br>- Documentação técnica pronta (cálculos + endpoint).<br>- PO aprovou a visualização e valores exibidos. |
 | **11**<br>_Pesquisar por endereço ou ponto de ônibus no mapa_ | - Base de endereços e pontos de ônibus validada (`lat`, `lon`, `address`, `route_id`).<br>- API de geolocalização configurada e chave liberada.<br>- Mockup da busca revisado com UX.<br>- Casos de teste definidos (endereço exato, parcial, inexistente, ponto específico). | - Pings dos pontos de ônibus aparecem corretamente no mapa.<br>- Barra de pesquisa retorna endereços e pontos, centralizando o mapa no resultado.<br>- Resposta rápida (< 2s) e feedback visual pro usuário.<br>- Testes unitários e integração da API de geolocalização aprovados.<br>- Validação manual com diferentes tipos de busca.<br>- Documentação atualizada (estrutura da base + funcionamento da busca).<br>- Logs de pesquisa ativos.<br>- PO validou e aprovou a usabilidade. |
+
+
+</div>
+</div>
+
+</details>
+
+---
+
+<details>
+<summary>Sprint 3</summary>
+
+# Backlog da Sprint 3
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+| Ranking | Sprint | User Story | Prioridade | Estimativa (pts) |
+|---------|---------|------------|------------|-----------------|
+| 12 | 3 | Como cliente, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
+| 13 | 3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
+| 14 | 3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
+| 15 | 3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
+| 16 | 3 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região para identificar rapidamente áreas congestionadas. | Baixa | 5 |
+
+
+</div>
+</div>
+
+<br>
+<br>
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+## Sprint 3 – Organização
+  
+| Critério | Sprint |
+|----------|--------|
+| Capacidade estimada da Equipe por Sprint: | 34 story points |
+| Meta da Sprint: | US de ranking 12, 13, 14 (24 story points) |
+| Previsão da Sprint (extras, sem compromisso de entrega) | US de ranking 15, 16 (10 story points) |
+
+</div>
+</div>
+
+<br>
+<br>
+
+### Sprint 3 – DoR e DoD (por US)
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+#  DoR e DoD — Sprint 3
+
+| **Ranking** | **DoR (Definition of Ready)** | **DoD (Definition of Done)** |
+|:--:|:--|:--|
+| **12**<br>_Enviar alertas automáticos ao ultrapassar limites (incluindo envio via Telegram)_ | - Limites de cada indicador definidos e documentados (ex: velocidade, fluxo, tempo de congestionamento).<br>- Tipos de alerta configurados (e-mail, notificação no sistema e Telegram).<br>- Bot do Telegram criado e configurado com token de acesso e webhook ativo.<br>- Regras de disparo e mensagens padronizadas documentadas.<br>- Critérios de aceitação definidos: alerta deve ser enviado imediatamente após o limite ser ultrapassado, em todos os canais configurados.<br>- Endpoint de integração com o Telegram documentado e testado no ambiente. | - Regras de alerta implementadas e funcionando em tempo real.<br>- Notificações enviadas corretamente por e-mail, sistema e Telegram.<br>- Logs de envio registrados com status e horário de disparo.<br>- Mensagens do Telegram formatadas com título, indicador, valor e link direto para o dashboard.<br>
+| **13**<br>_Visualizar indicadores no mapa em tempo real (com radares/pings)_ | - Fonte de dados em tempo real confirmada e testável.<br>- Padrão visual dos pings e cores definido com design. <br>- Atualização automática implementada sem recarregar a página.<br>- Legenda e cores aplicadas corretamente conforme padrão de design.T<br>- Logs de atualização armazenados.<br>- Documentação e endpoints revisados.
+| **14**<br>_Responder aos alertas e registrar logs completos_ | - Estrutura de logs definida (`alert_id`, `user_id`, `status`, `timestamp`, `response`).<br>- Fluxo de resposta a alertas mapeado (abrir, responder, encerrar).- Critérios de aceitação definidos: todas as ações precisam ser rastreáveis.<br>- Acesso ao ambiente de logs configurado e testado.<br>- Integração com o sistema de autenticação confirmada. | - Sistema registra logs completos de todo o ciclo de vida do alerta.<br>- Ações de resposta salvas e exibidas no painel administrativo.<br>- Backend armazena logs com timestamps corretos.<br>- Testes unitários e de integração validados.<br>- Logs exportáveis em CSV/JSON.
+| **15**<br>_Receber sugestões de dados externos para análise_ | - Fontes externas de dados definidas (ex: Waze, Google Traffic, sensores municipais, APIs públicas de mobilidade).<br>- Critérios para sugestão de dados documentados (tipo, relevância, frequência de atualização).<br>- Mockup da interface de sugestões revisado com PO.Casos de teste definidos (dados válidos, inválidos e indisponíveis). | - Sugestões externas exibidas corretamente no dashboard.<br>- Backend coleta e trata dados externos com sucesso.<br>- Sistema filtra e mostra apenas dados relevantes.<br>- Logs de integração e erros armazenados |
+| **16**<br>_Visualizar mapa com cores indicando níveis de tráfego por região_ | - Mapa base da cidade configurado e carregando corretamente.<br>- Padrão de cores definido com design (verde, amarelo, vermelho, azul, roxo).- Regras de classificação por nível documentadas (ex: leve, moderado, intenso, crítico). Critério de aceitação: atualização automática e fluida, sem travamentos. | - Mapa clicavel colorido exibindo níveis de tráfego por região funcionando em tempo real.<br>- Backend calcula níveis e envia dados corretamente via API.<br>- Cores e legendas aplicadas conforme padrão visual aprovado.<br>- Atualização automática validada e otimizada. |
 
 
 </div>
