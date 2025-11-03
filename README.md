@@ -265,7 +265,7 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 <div align="center">
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
-<img width="1219" height="689" alt="image" src="https://github.com/user-attachments/assets/f0f57506-cad6-41f7-b09f-56e35142531d" />
+<img width="1219" height="689" alt="image" src="https://github.com/user-attachments/assets/e199231b-c4aa-4a1d-9130-79dea8e595fc" />
 
 
 ---
