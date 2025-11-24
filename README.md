@@ -182,7 +182,6 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 
 #  DoR e DoD — Sprint 2
 
----
 
 | **Ranking** | **DoR (Definition of Ready)** | **DoD (Definition of Done)** |
 |:--:|:--|:--|
@@ -200,11 +199,73 @@ O sistema proposto visa a manipulação e análise de dados de radares de trâns
 
 ---
 
+<details>
+<summary>Sprint 3</summary>
+
+# Backlog da Sprint 3
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+| Ranking | Sprint | User Story | Prioridade | Estimativa (pts) |
+|---------|---------|------------|------------|-----------------|
+| 12 | 3 | Como cliente, quero enviar alertas automáticos quando os indicadores ultrapassarem limites para que o cliente seja notificado e possa tomar decisões. | Alta | 8 |
+| 13 | 3 | Como cliente, quero visualizar indicadores no mapa em tempo real, incluindo pings representando radares para monitorar a situação do tráfego instantaneamente. | Alta | 8 |
+| 14 | 3 | Como cliente, quero responder aos alertas e que o sistema registre logs completos de envio, resposta e encerramento para garantir rastreabilidade das ações. | Média | 8 |
+| 15 | 3 | Como cliente, quero receber sugestões de dados externos que possam complementar a análise do tráfego para ter insights mais completos. | Baixa | 5 |
+| 16 | 3 | Como cliente, quero visualizar um mapa da cidade com cores indicando níveis de tráfego por região para identificar rapidamente áreas congestionadas. | Baixa | 5 |
+
+
+</div>
+</div>
+
+<br>
+<br>
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+## Sprint 3 – Organização
+  
+| Critério | Sprint |
+|----------|--------|
+| Capacidade estimada da Equipe por Sprint: | 34 story points |
+| Meta da Sprint: | US de ranking 12, 13, 14 (24 story points) |
+| Previsão da Sprint (extras, sem compromisso de entrega) | US de ranking 15, 16 (10 story points) |
+
+</div>
+</div>
+
+<br>
+<br>
+
+### Sprint 3 – DoR e DoD (por US)
+
+<div align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
+
+#  DoR e DoD — Sprint 3
+
+| **Ranking** | **DoR (Definition of Ready)** | **DoD (Definition of Done)** |
+|:--:|:--|:--|
+| **12**<br>_Enviar alertas automáticos ao ultrapassar limites (incluindo envio via Telegram)_ | - Limites de cada indicador definidos e documentados (ex: velocidade, fluxo, tempo de congestionamento).<br>- Tipos de alerta configurados (e-mail, notificação no sistema e Telegram).<br>- Bot do Telegram criado e configurado com token de acesso e webhook ativo.<br>- Regras de disparo e mensagens padronizadas documentadas.<br>- Critérios de aceitação definidos: alerta deve ser enviado imediatamente após o limite ser ultrapassado, em todos os canais configurados.<br>- Endpoint de integração com o Telegram documentado e testado no ambiente. | - Regras de alerta implementadas e funcionando em tempo real.<br>- Notificações enviadas corretamente por e-mail, sistema e Telegram.<br>- Logs de envio registrados com status e horário de disparo.<br>- Mensagens do Telegram formatadas com título, indicador, valor e link direto para o dashboard.<br> |
+| **13**<br>_Visualizar indicadores no mapa em tempo real (com radares/pings)_ | - Fonte de dados em tempo real confirmada e testável.<br>- Padrão visual dos pings e cores definido com o time de design.<br>- Atualização automática implementada sem recarregar a página.<br>- Legenda e cores aplicadas corretamente conforme o padrão de design.<br>- Logs de atualização armazenados.<br>- Documentação e endpoints revisados e aprovados. | - Indicadores exibidos corretamente no mapa em tempo real.<br>- Pings atualizados dinamicamente conforme os dados recebidos.<br>- Legenda e cores apresentadas de forma consistente com o padrão visual.<br>- Atualização fluida e sem recarregar a página.<br>- Logs de atualização registrados e acessíveis para auditoria.<br> |
+| **14**<br>_Responder aos alertas e registrar logs completos_ | - Estrutura de logs definida (`alert_id`, `user_id`, `status`, `timestamp`, `response`).<br>- Fluxo de resposta a alertas mapeado (abrir, responder, encerrar).<br>- Critérios de aceitação definidos: todas as ações precisam ser rastreáveis.<br>- Acesso ao ambiente de logs configurado e testado.<br>- Integração com o sistema de autenticação confirmada. | - Sistema registra logs completos de todo o ciclo de vida do alerta.<br>- Ações de resposta salvas e exibidas no painel administrativo.<br>- Backend armazena logs com timestamps corretos.<br>- Testes unitários e de integração validados.<br>- Logs exportáveis em CSV/JSON.<br> |
+| **15**<br>_Receber sugestões de dados externos para análise_ | - Fontes externas de dados definidas (ex: Waze, Google Traffic, sensores municipais, APIs públicas de mobilidade).<br>- Critérios para sugestão de dados documentados (tipo, relevância, frequência de atualização).<br>- Mockup da interface de sugestões revisado com PO.<br>- Casos de teste definidos (dados válidos, inválidos e indisponíveis). | - Sugestões externas exibidas corretamente no dashboard.<br>- Backend coleta e trata dados externos com sucesso.<br>- Sistema filtra e mostra apenas dados relevantes.<br>- Logs de integração e erros armazenados.<br> |
+| **16**<br>_Visualizar mapa com cores indicando níveis de tráfego por região_ | - Mapa base da cidade configurado e carregando corretamente.<br>- Padrão de cores definido com design (verde, amarelo, vermelho, azul, roxo).<br>- Regras de classificação por nível documentadas (ex: leve, moderado, intenso, crítico).<br>- Critério de aceitação: atualização automática e fluida, sem travamentos. | - Mapa clicável colorido exibindo níveis de tráfego por região em tempo real.<br>- Backend calcula níveis e envia dados corretamente via API.<br>- Cores e legendas aplicadas conforme padrão visual aprovado.<br>- Atualização automática validada e otimizada.<br> |
+
+
+</div>
+</div>
+
+</details>
+
+---
+
 # **TIME VORTEK**
 <div align="center">
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; gap: 20px;">
-<img width="1219" height="689" alt="image" src="https://github.com/user-attachments/assets/f0f57506-cad6-41f7-b09f-56e35142531d" />
+<img width="1219" height="689" alt="image" src="https://github.com/user-attachments/assets/e199231b-c4aa-4a1d-9130-79dea8e595fc" />
 
 
 ---
